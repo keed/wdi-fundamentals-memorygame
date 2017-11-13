@@ -1,4 +1,4 @@
-cdbody {
+body {
 	text-align: center;
 }
 
@@ -47,10 +47,12 @@ p {
 }
 
 p.copyright {
+	font-family: "Raleway";
 	float: left;
 }
 
 p.message {
+	font-family: "Raleway";
 	float: right;
 }
 
@@ -64,6 +66,11 @@ footer {
 	font-weight: 500;
 }
 
+.name {
+	color: #F15B31;
+	font-weight: 700;
+}
+
 a {
 	text-transform: uppercase;
 	font-family: "Raleway";
@@ -72,8 +79,22 @@ a {
 	font-weight: 600;
 	font-size: 18px;
 	margin: 0px 20px 0px 20px;
+	border-bottom: 2px solid transparent;
+}
+
+a:hover {
+	border-color: white;
 }
 
 img {
 	margin: 40px 8px 0px 8px;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
 }
